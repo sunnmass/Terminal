@@ -1,0 +1,196 @@
+Last login: Sun Apr 30 16:40:07 on ttys000
+sunnmasss-MacBook-Pro:~ sunnmass$ ls
+4688.log		Library			Soulseek Chat Logs
+Applications		Movies			Yandex.Disk.localized
+Desktop			Music			_flag 1 side.pdf
+Documents		Pictures		f1
+Downloads		Postman			hs_err_pid21556.log
+Install			Public			hs_err_pid93437.log
+sunnmasss-MacBook-Pro:~ sunnmass$ rm f1
+rm: f1: is a directory
+sunnmasss-MacBook-Pro:~ sunnmass$ rm -r f1
+sunnmasss-MacBook-Pro:~ sunnmass$ ls
+4688.log		Library			Soulseek Chat Logs
+Applications		Movies			Yandex.Disk.localized
+Desktop			Music			_flag 1 side.pdf
+Documents		Pictures		hs_err_pid21556.log
+Downloads		Postman			hs_err_pid93437.log
+Install			Public
+sunnmasss-MacBook-Pro:~ sunnmass$ vim hs_err_pid21556.log
+sunnmasss-MacBook-Pro:~ sunnmass$ vim _flag\ 1\ side.pd
+sunnmasss-MacBook-Pro:~ sunnmass$ vim _flag\ 1\ side.pdf
+sunnmasss-MacBook-Pro:~ sunnmass$ clear
+
+
+sunnmasss-MacBook-Pro:~ sunnmass$ pwd
+/Users/sunnmass
+sunnmasss-MacBook-Pro:~ sunnmass$ ls
+4688.log		Library			Soulseek Chat Logs
+Applications		Movies			Yandex.Disk.localized
+Desktop			Music			_flag 1 side.pd
+Documents		Pictures		_flag 1 side.pdf
+Downloads		Postman			hs_err_pid21556.log
+Install			Public			hs_err_pid93437.log
+sunnmasss-MacBook-Pro:~ sunnmass$ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+sunnmasss-MacBook-Pro:~ sunnmass$ pwd
+/Users/sunnmass
+sunnmasss-MacBook-Pro:~ sunnmass$ mkdir f1
+sunnmasss-MacBook-Pro:~ sunnmass$ cd f1
+sunnmasss-MacBook-Pro:f1 sunnmass$ mkdir ff{1..3}
+sunnmasss-MacBook-Pro:f1 sunnmass$ cd ff1
+sunnmasss-MacBook-Pro:ff1 sunnmass$ touch t{1,2,3}.txt j{1,2}.json
+sunnmasss-MacBook-Pro:ff1 sunnmass$ mkdir fff{1..3}
+sunnmasss-MacBook-Pro:ff1 sunnmass$ ls -la
+total 0
+drwxr-xr-x  10 sunnmass  staff  320 30 апр 17:24 .
+drwxr-xr-x   5 sunnmass  staff  160 30 апр 17:23 ..
+drwxr-xr-x   2 sunnmass  staff   64 30 апр 17:24 fff1
+drwxr-xr-x   2 sunnmass  staff   64 30 апр 17:24 fff2
+drwxr-xr-x   2 sunnmass  staff   64 30 апр 17:24 fff3
+-rw-r--r--   1 sunnmass  staff    0 30 апр 17:23 j1.json
+-rw-r--r--   1 sunnmass  staff    0 30 апр 17:23 j2.json
+-rw-r--r--   1 sunnmass  staff    0 30 апр 17:23 t1.txt
+-rw-r--r--   1 sunnmass  staff    0 30 апр 17:23 t2.txt
+-rw-r--r--   1 sunnmass  staff    0 30 апр 17:23 t3.txt
+sunnmasss-MacBook-Pro:ff1 sunnmass$ cd ..
+sunnmasss-MacBook-Pro:f1 sunnmass$ rm ./ff1/t{1,2}.txt ./ff1/fff1
+rm: ./ff1/fff1: is a directory
+sunnmasss-MacBook-Pro:f1 sunnmass$ mv ./ff1/t{1,2}.txt ./ff1/fff1
+mv: rename ./ff1/t1.txt to ./ff1/fff1/t1.txt: No such file or directory
+mv: rename ./ff1/t2.txt to ./ff1/fff1/t2.txt: No such file or directory
+sunnmasss-MacBook-Pro:f1 sunnmass$ mv ./ff1/t{1,2}.txt ./ff3
+mv: rename ./ff1/t1.txt to ./ff3/t1.txt: No such file or directory
+mv: rename ./ff1/t2.txt to ./ff3/t2.txt: No such file or directory
+sunnmasss-MacBook-Pro:f1 sunnmass$ mv ./ff1/t1.txt ./ff3
+mv: rename ./ff1/t1.txt to ./ff3/t1.txt: No such file or directory
+sunnmasss-MacBook-Pro:f1 sunnmass$ mv ./ff1/t1.txt ./ff3/t1.txt
+mv: rename ./ff1/t1.txt to ./ff3/t1.txt: No such file or directory
+sunnmasss-MacBook-Pro:f1 sunnmass$ ls
+ff1	ff2	ff3
+sunnmasss-MacBook-Pro:f1 sunnmass$ mv ./ff1/t1.txt ff3
+mv: rename ./ff1/t1.txt to ff3/t1.txt: No such file or directory
+sunnmasss-MacBook-Pro:f1 sunnmass$ ls -la
+total 0
+drwxr-xr-x   5 sunnmass  staff   160 30 апр 17:23 .
+drwxr-xr-x+ 39 sunnmass  staff  1248 30 апр 17:22 ..
+drwxr-xr-x   8 sunnmass  staff   256 30 апр 17:25 ff1
+drwxr-xr-x   2 sunnmass  staff    64 30 апр 17:23 ff2
+drwxr-xr-x   2 sunnmass  staff    64 30 апр 17:23 ff3
+sunnmasss-MacBook-Pro:f1 sunnmass$ ls ff1
+fff1	fff2	fff3	j1.json	j2.json	t3.txt
+sunnmasss-MacBook-Pro:f1 sunnmass$ mdfind t1.txt
+/Users/sunnmass/Downloads/home_work_1_terminal_bash.txt
+/Users/sunnmass/Library/Group Containers/6N38VWS5BX.ru.keepcoder.Telegram/stable/account-2181653187468588739/postbox/media/telegram-cloud-document-2-5330044467191754709
+/Users/sunnmass/Library/Group Containers/6N38VWS5BX.ru.keepcoder.Telegram/stable/account-2181653187468588739/postbox/media/telegram-cloud-document-2-5330266229238147144
+sunnmasss-MacBook-Pro:f1 sunnmass$ cd ..
+sunnmasss-MacBook-Pro:~ sunnmass$ ls ff1
+ls: ff1: No such file or directory
+sunnmasss-MacBook-Pro:~ sunnmass$ ls ff1
+ls: ff1: No such file or directory
+sunnmasss-MacBook-Pro:~ sunnmass$ ls
+4688.log		Movies			_flag 1 side.pd
+Applications		Music			_flag 1 side.pdf
+Desktop			Pictures		f1
+Documents		Postman			hs_err_pid21556.log
+Downloads		Public			hs_err_pid93437.log
+Install			Soulseek Chat Logs
+Library			Yandex.Disk.localized
+sunnmasss-MacBook-Pro:~ sunnmass$ ls .f1/ff1
+ls: .f1/ff1: No such file or directory
+sunnmasss-MacBook-Pro:~ sunnmass$ cd f1
+sunnmasss-MacBook-Pro:f1 sunnmass$ cd ff1
+sunnmasss-MacBook-Pro:ff1 sunnmass$ ls
+fff1	fff2	fff3	j1.json	j2.json	t3.txt
+sunnmasss-MacBook-Pro:ff1 sunnmass$ mv ./fff1/t1.txt ./f1/ff3
+mv: rename ./fff1/t1.txt to ./f1/ff3: No such file or directory
+sunnmasss-MacBook-Pro:ff1 sunnmass$ clear
+
+sunnmasss-MacBook-Pro:ff1 sunnmass$ pwd
+/Users/sunnmass/f1/ff1
+sunnmasss-MacBook-Pro:ff1 sunnmass$ ls
+fff1	fff2	fff3	j1.json	j2.json	t3.txt
+sunnmasss-MacBook-Pro:ff1 sunnmass$ ls fff1
+sunnmasss-MacBook-Pro:ff1 sunnmass$ ls fff2
+sunnmasss-MacBook-Pro:ff1 sunnmass$ ls fff3
+sunnmasss-MacBook-Pro:ff1 sunnmass$ touch t{1,2,3}.txt
+sunnmasss-MacBook-Pro:ff1 sunnmass$ ls
+fff1	fff2	fff3	j1.json	j2.json	t1.txt	t2.txt	t3.txt
+sunnmasss-MacBook-Pro:ff1 sunnmass$ cd ..
+sunnmasss-MacBook-Pro:f1 sunnmass$ mv ./ff1/t{1,2}.txt ff2
+sunnmasss-MacBook-Pro:f1 sunnmass$ cp ./ff1/j{1,2}.json ff3
+sunnmasss-MacBook-Pro:f1 sunnmass$ cd ..
+sunnmasss-MacBook-Pro:~ sunnmass$ pwd
+/Users/sunnmass
+sunnmasss-MacBook-Pro:~ sunnmass$ rm -r f1
+sunnmasss-MacBook-Pro:~ sunnmass$ clear
+
+
+
+
+
+
+sunnmasss-MacBook-Pro:~ sunnmass$ pwd
+/Users/sunnmass
+sunnmasss-MacBook-Pro:~ sunnmass$ mkdir f1
+sunnmasss-MacBook-Pro:~ sunnmass$ cd f1
+sunnmasss-MacBook-Pro:f1 sunnmass$ mkdir ff1 ff2 ff3
+sunnmasss-MacBook-Pro:f1 sunnmass$ cd ff1
+sunnmasss-MacBook-Pro:ff1 sunnmass$ touch t{1,2,3}.txt j{1,2}.json
+sunnmasss-MacBook-Pro:ff1 sunnmass$ mkdir fff{1..3}
+sunnmasss-MacBook-Pro:ff1 sunnmass$ ls -la
+total 0
+drwxr-xr-x  10 sunnmass  staff  320 30 апр 17:40 .
+drwxr-xr-x   5 sunnmass  staff  160 30 апр 17:34 ..
+drwxr-xr-x   2 sunnmass  staff   64 30 апр 17:35 fff1
+drwxr-xr-x   2 sunnmass  staff   64 30 апр 17:35 fff2
+drwxr-xr-x   2 sunnmass  staff   64 30 апр 17:35 fff3
+-rw-r--r--   1 sunnmass  staff    0 30 апр 17:35 j1.json
+-rw-r--r--   1 sunnmass  staff    0 30 апр 17:35 j2.json
+-rw-r--r--   1 sunnmass  staff    0 30 апр 17:40 t1.txt
+-rw-r--r--   1 sunnmass  staff    0 30 апр 17:40 t2.txt
+-rw-r--r--   1 sunnmass  staff    0 30 апр 17:35 t3.txt
+sunnmasss-MacBook-Pro:ff1 sunnmass$ cd ..
+sunnmasss-MacBook-Pro:f1 sunnmass$ vim ./ff1/t1.txt
+sunnmasss-MacBook-Pro:f1 sunnmass$ mv ./ff1/t{1..2}.txt ./ff1/fff1
+sunnmasss-MacBook-Pro:f1 sunnmass$ cp ./ff1/j{1,2}.json ff2
+sunnmasss-MacBook-Pro:f1 sunnmass$ find . -name t3.txt
+./ff1/t3.txt
+sunnmasss-MacBook-Pro:f1 sunnmass$ tail -F ./ff1/t3.txt
+Dsjccjn
+Dfljvhbslhvbd
+Sdchboucb
+^C
+sunnmasss-MacBook-Pro:f1 sunnmass$ head -3 ./ff1/fff1/t1.txt
+01
+02
+03
+sunnmasss-MacBook-Pro:f1 sunnmass$ tail -10 ./ff1/fff1/t1.txt
+91
+92
+93
+94
+95
+96
+97
+98
+99
+100
+sunnmasss-MacBook-Pro:f1 sunnmass$ less ~/pid21556.log
+sunnmasss-MacBook-Pro:f1 sunnmass$ date
+воскресенье, 30 апреля 2023 г. 17:51:17 (CEST)
+
+
